@@ -71,10 +71,14 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
-    <div class="row">
+    <div class="row mt-5">
       <div class="col-6">
         <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! </a>.</p>
+        {% for c in site.competencies %}
+          <h2>{{ c.category }}</h2>
+          <h3>{{ c.sub-category }}</h3>
+          <div>{{ c.content }}</div>
+        {% endfor %}
       </div>
     </div>
   </div>
