@@ -1,0 +1,22 @@
+{% assign competencies = site.competencies | group_by: "category" | sort: "name" %}
+{% for c in competencies %}
+<h2>{{ c.name }}</h2>
+<table>
+  <thead>
+    <th>Sub-category</th>
+    <th>Level 1</th>
+    <th>Level 2</th>
+    <th>Level 3</th>
+  </thead>
+  <tbody>
+{% for i in c.items %}
+  <tr>
+    <td>{{ i.sub-category }}</td>
+    <td>{{ i.L1 }}</td>
+    <td>{{ i.L2 }}</td>
+    <td>{{ i.L3 }}</td>
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endfor %}
