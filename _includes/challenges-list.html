@@ -1,0 +1,9 @@
+{% assign challenges = site.challenges %}
+<ul>
+{% for c in challenges %}
+
+  <li><a href="{{ c.url}}">{{ c.title }}</a></li>
+
+
+{% endfor %}
+</ul>

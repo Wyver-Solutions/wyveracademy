@@ -14,6 +14,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Wyver Academy
+organisation: Wyver Solutions Ltd
+orgurl: https://www.wyversolutions.co.uk
 email: mberthelemy@wyversolutions.co.uk
 description: Learn to become a learning technology consultant
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -29,6 +31,8 @@ plugins:
 
 collections:
     competencies:
+        output: true
+    challenges:
         output: true
 
 collections_dir: _collections

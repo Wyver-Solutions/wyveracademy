@@ -1,0 +1,67 @@
+---
+layout: default
+---
+<p><a href="https://github.com/Wyver-Solutions/wyveracademy/blob/gh-pages/_collections/{{ page.path }}">Edit on Github</a></p>
+<table class="table table-bordered table-hover">
+  <thead class="thead-dark">
+    <th width="3%">ID</th>
+    <th width="7%">Sub-category</th>
+    <th width="30%">Level 1</th>
+    <th width="30%">Level 2</th>
+    <th width="30%">Level 3</th>
+  </thead>
+  <tbody>
+{% assign challenges = site.challenges %}
+{% for i in page.items %}
+  <tr>
+    <td class="align-top"><p>{{ i.ID }}</p></td>
+    <td class="align-top"><p>{{ i.name }}</p></td>
+    <td class="align-top"><p>{{ i.L1 }}</p>
+      <ul>      
+        {% for c in challenges %}
+            {% for competency in c.competencies %}
+                {% assign compID = competency | slice: 0,4 %}
+                {% if i.ID == compID %}
+                  {% assign level = competency | slice: -2,2 %}
+                  {% if level == "L1" %}
+                    <li><a href="{{ c.url }}">{{ c.title }}</a></li>
+                  {% endif %}
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+      </ul>
+    </td>
+    <td class="align-top"><p>{{ i.L2 }}</p>
+    <ul>      
+        {% for c in challenges %}
+            {% for competency in c.competencies %}
+                {% assign compID = competency | slice: 0,4 %}
+                {% if i.ID == compID %}
+                  {% assign level = competency | slice: -2,2 %}
+                  {% if level == "L2" %}
+                    <li><a href="{{ c.url }}">{{ c.title }}</a></li>
+                  {% endif %}
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+      </ul>
+    </td>
+    <td class="align-top"><p>{{ i.L3 }}</p>
+    <ul>      
+        {% for c in challenges %}
+            {% for competency in c.competencies %}
+                {% assign compID = competency | slice: 0,4 %}
+                {% if i.ID == compID %}
+                  {% assign level = competency | slice: -2,2 %}
+                  {% if level == "L3" %}
+                    <li><a href="{{ c.url }}">{{ c.title }}</a></li>
+                  {% endif %}
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+      </ul>
+    </td>
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>

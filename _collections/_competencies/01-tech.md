@@ -1,5 +1,6 @@
 ---
-category: Technology
+layout: competency
+title: Technology
 items:
 - ID: T.01
   name: HTML
@@ -23,9 +24,39 @@ items:
   L3: Able to describe when different back-end technologies are appropriate
 - ID: T.05
   name: Databases
-  L1: Able to explain the difference between normalised and unnormalised data
-  L2: Able to inspect a database using standard tools
+  L1: Able to inspect a database
+  L2: Able to create a database
   L3: Able to write queries to pull data from a database
+- ID: T.06
+  name: Web servers
+  L1: 
+  L2: 
+  L3: 
+- ID: T.07
+  name: Integration
+  L1: 
+  L2: 
+  L3:
+- ID: T.08
+  name: Data
+  L1: 
+  L2: 
+  L3:  
+- ID: T.09
+  name: Standards
+  L1: 
+  L2: 
+  L3: 
+- ID: T.10
+  name: Applications
+  L1: 
+  L2: 
+  L3:
+- ID: T.11
+  name: Content management
+  L1: 
+  L2: 
+  L3: 
 ---
 
 - Able to talk sensibly with developers about all aspects of web technologies (HTML, CSS, JS, Node, PHP, Databases, Web servers, Load balancing, APIs etc)
