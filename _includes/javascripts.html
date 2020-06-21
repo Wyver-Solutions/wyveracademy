@@ -19,7 +19,30 @@ $(document).ready(function() {
         "searching": false,
         "responsive": true
     });
+    $("form#assessment").submit(function(){
+        event.preventDefault();
+        var value = 0;
+        for ( var i = 0, l = competencyGroups.length; i < l; i++ ) {
+            //console.log(competencyGroups[i]);
+            //console.log(competencyGroups[i][0]);
+
+            console.log( $("input[name='competencyGroups[i][0]']:checked").val()); // undefined???
+            
+            
+            };
+        });
+ 
+
+    
+
+    $( "form#assessment" ).on( "submit", function( event ) {
+  event.preventDefault();
+  //console.log( $( this ).serialize() );
+    });
+
 } );
+
+
 
 
 </script>

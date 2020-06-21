@@ -1,9 +1,10 @@
 ---
 layout: competency
 title: Learning solution design
+ID: Design
 description: You are likely to be the person asked to design a solution that will meet your customer's needs - based on a strong theoretical and practical background.
 items:
-- ID: S.01
+- ID: 01
   name: Theories
   L1: Able to create a simple HTML page with semantic markup
   L2: Able to inspect HTML and validate that it is well formed
