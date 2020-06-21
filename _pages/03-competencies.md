@@ -1,5 +1,5 @@
 ---
-title: Competencies
+title: Competency framework
 layout: default
 permalink: /competencies/
 ---

@@ -1,9 +1,13 @@
 {% assign competencies = site.competencies | sort: "category" %}
-<ul>
 {% for c in competencies %}
 
-  <li><a href="{{ c.url}}">{{ c.title }}</a></li>
-
+  <div class="row">
+    <div class="col-3">
+      <p><strong><a href="{{ c.url}}">{{ c.title }}</a></strong></p>
+    </div>
+    <div class="col-9">
+      <p>{{ c.description }}</p>
+    </div>
+  </div>
 
 {% endfor %}
-</ul>
