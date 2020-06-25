@@ -24,19 +24,52 @@ $(document).ready(function() {
         formData = $('form#assessment').serializeArray(); // put form data into array
 //console.log(formData);
         
+        var compGroups=[]; // Setup array to hold competence names and total scores
 
-            $(formData).each(function(i, field){ //iterate through the formdata
-                var compItemID = field.name;
-                var compID = compItemID.substr(0, compItemID.indexOf('_')); // find the compID by parsing before the _
+        $(formData).each(function(i, field){ //iterate through the formdata
+            var compItemID = field.name;
+            var compID = compItemID.substr(0, compItemID.indexOf('_')); // find the compID by parsing before the _
 
-                console.log(compID);
+           // console.log(compID);
+            
+            compGroups.push(compID); // Create an array of all the competency groups by adding each one in turn
+        });
 
-// Need to create an array of the compIDs, with a count of compItemIDs and a total of the values. Then can work out the average. 
+        compGroupsUnique = [...new Set(compGroups)]; // Create list of unique competency groups
+            
+        //console.log(compGroupsUnique);
+        var compGroupScores = []; // Create an array to hold the unique names and their scores
+        $(compGroupsUnique).each(function(a,name){
+            compGroupScores.push([name,0]); // initialise array of groups and scores
+        });
+             //console.log(compGroupScores); // Works OK
+           
 
-              
+        var compItemID = "";
+        var compItemScore = 0;
+
+        $(formData).each(function(i,field) { // go through each form item
+            
+            compItemID = field.name;
+            compItemScore = field.value;
+
+            $(compGroupScores).each(function(j,scoreItem){ // go through the unique competency groups
+                
+            //console.log(compItemID,compItemScore);
+            var compID = compItemID.substr(0, compItemID.indexOf('_')); // get ready to make a comparison with the unique competency groups
+            
+                if(compID==scoreItem[0]){ // check to see if we can add to the list of unique groups
+                   // console.log(compID, scoreItem[0],compItemScore, scoreItem[1]);
+                    
+                    compGroupScores[1]=scoreItem[1]+compItemScore;
+                    
+                    console.log(compGroupScores[1]); // CREATING A STRING???
+                }
+                
             });
+        });
 
-        
+        //console.log(compGroupScores);
                 
                 
 
