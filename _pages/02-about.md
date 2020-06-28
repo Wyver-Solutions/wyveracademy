@@ -1,7 +1,7 @@
 ---
 layout: default
 title: About
-permalink: /about/
+permalink: about
 ---
 At Wyver Solutions, we have led and supported learning technology projects since 2006.
 

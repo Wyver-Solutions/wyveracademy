@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Assessment
-permalink: /assessment/
+permalink: assessment
 ---
 {% assign competencies = site.competencies | sort: "category" %}
 <script>var competencyGroups = [];</script>
@@ -19,7 +19,7 @@ permalink: /assessment/
     
 
 <form id="assessment">
-    
+
 
     <div class="tab-content">
 

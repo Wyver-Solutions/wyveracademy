@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Coaching
-permalink: /coaching/
+permalink: coaching
 ---
 Through our coaching programme, you will be given a series of [challenges](/challenges) matched to your particular needs. As you do the challenges, we will support you through a series of individual meetings, email-based assistance, and an online community of practice.
 
@@ -18,7 +18,7 @@ Through our coaching programme, you will be given a series of [challenges](/chal
     </div>
         <div class="col-lg-6">
             <figure class="figure">
-                <img class="img-fluid" src="/assets/images/framework.png" alt="circle with framework components" />
+                <img class="img-fluid" src="{{ '/assets/images/framework.png' | relative_url }}" alt="circle with framework components" />
                 <figcaption class="figure-caption text-center">Competency framework components</figcaption>
             </figure>
         </div>

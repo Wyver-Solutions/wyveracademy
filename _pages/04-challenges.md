@@ -1,6 +1,6 @@
 ---
 title: Challenges
 layout: default
-permalink: /challenges/
+permalink: challenges
 ---
 {% include challenges-list.html %}

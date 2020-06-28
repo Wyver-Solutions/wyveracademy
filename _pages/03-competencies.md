@@ -1,6 +1,6 @@
 ---
 title: Competency framework
 layout: default
-permalink: /competencies/
+permalink: competencies
 ---
 {% include competencies-list.html %}
