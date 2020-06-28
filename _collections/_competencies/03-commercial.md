@@ -9,6 +9,26 @@ items:
   L1: Able to create a simple HTML page with semantic markup
   L2: Able to inspect HTML and validate that it is well formed
   L3: Able to create a multi-page website using dynamic scripting or a static site generator
+- ID: C.02
+  name: 
+  L1: 
+  L2: 
+  L3: 
+- ID: C.03
+  name: 
+  L1: 
+  L2: 
+  L3: 
+- ID: C.04
+  name: 
+  L1: 
+  L2: 
+  L3: 
+- ID: C.05
+  name: 
+  L1: 
+  L2: 
+  L3: 
 
 ---
 
