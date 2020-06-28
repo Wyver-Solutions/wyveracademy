@@ -39,37 +39,46 @@ $(document).ready(function() {
             
         //console.log(compGroupsUnique);
         var compGroupScores = []; // Create an array to hold the unique names and their scores
+        //console.log(compGroupScores);
+        
         $(compGroupsUnique).each(function(a,name){
-            compGroupScores.push([name,0]); // initialise array of groups and scores
+            compGroupScores.push({group: name,score: 0,count:0}); // initialise array of groups and scores
+            
         });
-             //console.log(compGroupScores); // Works OK
+        //console.log(compGroupScores); // Works OK
+             
            
 
         var compItemID = "";
         var compItemScore = 0;
+        
 
         $(formData).each(function(i,field) { // go through each form item
-            
+            //console.log(field);
             compItemID = field.name;
             compItemScore = field.value;
 
             $(compGroupScores).each(function(j,scoreItem){ // go through the unique competency groups
-                
+               // console.log(scoreItem.group, scoreItem.score);
             //console.log(compItemID,compItemScore);
             var compID = compItemID.substr(0, compItemID.indexOf('_')); // get ready to make a comparison with the unique competency groups
             
-                if(compID==scoreItem[0]){ // check to see if we can add to the list of unique groups
-                   // console.log(compID, scoreItem[0],compItemScore, scoreItem[1]);
+                if(compID==scoreItem.group){ // check to see if we can add to the list of unique groups
                     
-                    compGroupScores[1]=scoreItem[1]+compItemScore;
+                    var aggScore = compGroupScores[j].score; // Temporary variable
+
+                    aggScore = parseFloat(aggScore) + parseFloat(compItemScore); // Create the new aggregate score for this group
                     
-                    console.log(compGroupScores[1]); // CREATING A STRING???
+                    compGroupScores[j].score = aggScore; // Put the aggregate score back into the group
+                    compGroupScores[j].count++; // Increment count of items in this group
+                    
+
                 }
                 
             });
         });
 
-        //console.log(compGroupScores);
+        console.log(compGroupScores);
                 
                 
 
