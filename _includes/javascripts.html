@@ -10,6 +10,8 @@
 <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
 <script src="https://cdn.datatables.net/responsive/2.2.5/js/dataTables.responsive.min.js"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
 <script>
 $(document).ready(function() {
     $('#competencies').DataTable({
@@ -51,6 +53,8 @@ $(document).ready(function() {
 
         var compItemID = "";
         var compItemScore = 0;
+        var labels = []; // initialise arrays for chart
+        var scores = [];
         
 
         $(formData).each(function(i,field) { // go through each form item
@@ -71,28 +75,61 @@ $(document).ready(function() {
                     
                     compGroupScores[j].score = aggScore; // Put the aggregate score back into the group
                     compGroupScores[j].count++; // Increment count of items in this group
-                    
-
-                }
-                
+                } 
             });
-        });
-
-        console.log(compGroupScores);
-                
-                
-
+        }); // end of loop through formData
         
+
+//console.log(compGroupScores); 
+        $(compGroupScores).each(function(n,value){ // set up data for chart
+            //console.log(value.group, value.score);
+            labels.push(value.group);
+            scores.push(value.score/value.count);
+            
         });
- 
+        console.log(compGroupScores);
+        radar(labels,scores);
+        
+        
 
-    
-
-    
-
-} );
+        }); // end of Submit function
+} ); // end of Document.ready function
 
 
-
+function radar(labels,scores) {
+    var ctx = document.getElementById('radarChart').getContext('2d');
+    Chart.defaults.global.defaultFontSize = 14;
+    var chart = new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    data: scores
+                }],
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: 'Average scores per group'
+                },
+                legend: {
+                    display: false,
+                    labels: {
+                        fontColor: 'rgb(255, 99, 132)'
+                    }
+                },
+                scale: {
+                    ticks: {
+                        max: 3,
+                        min: 0,
+                        stepSize: 1
+                    }
+                }
+            }
+    });
+}
 
 </script>
+
+
+

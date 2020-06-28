@@ -66,10 +66,8 @@ permalink: /assessment/
 </div><!-- end of form group: {{ c.title }} -->
 {% endfor %}
 
-<!--<script>console.log(competencyGroups);</script>
-<script>console.log(competencyGroups[1][0]);</script>-->
-
-
   
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+
+<canvas id="radarChart"></canvas>
