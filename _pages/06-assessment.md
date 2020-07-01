@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Assessment
+title: Self-assessment
 permalink: assessment
 ---
 {% assign competencies = site.competencies | sort: "category" %}
@@ -30,6 +30,7 @@ permalink: assessment
             <div class="form-group">
       
                 <p>{{ c.description }}</p>
+                <p><a href="https://github.com/Wyver-Solutions/wyveracademy/issues" target="_blank">Comment on Github</a> (opens in a new tab)</p>
                 <table width="100%" class="table table-bordered table-striped">
                     <thead class="thead-dark">
                         <th class="all">Sub-category</th>
@@ -42,7 +43,7 @@ permalink: assessment
                         <script>competencyGroups.push(["{{ c.title }}","{{ c.ID }}_{{ item.ID }}",0]);</script>
                         <tr>
                             <td class="align-top">
-                                <p>{{ item.name }}</p>
+                                <p><strong>{{ item.name }}</strong></p>
                             </td>
                             <td class="align-top">
                                 <p>{{ item.L1 }}</p>
@@ -78,7 +79,8 @@ permalink: assessment
         {% endfor %}
     </div> <!--- end of tab content -->
 
-<div class="text-center"><button type="submit" class="btn btn-primary">Produce assessment graph</button></div>  
+
+<div class="text-center"><button type="submit" class="btn btn-primary">Produce assessment graph</button></div>
   
 
 </form>
@@ -86,3 +88,6 @@ permalink: assessment
 
 </div> <!-- end of smartwizard -->
 <canvas id="radarChart"></canvas>
+<div class="text-center">
+    <p>We can <a href="{{ site.baseurl }}/coaching">coach</a> you to the next level, or to improve where you have gaps.</p>
+</div>

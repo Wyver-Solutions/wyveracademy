@@ -7,8 +7,10 @@ At Wyver Solutions, we have led and supported learning technology projects since
 
 Our founder, Mark Berthelemy, has spent over 30 years involved at the intersection of education, business and learning technology.
 
-We want to train and support the next generation of learning technology specialists.
+We want to support the next generation of elearning specialists to create learning experiences, resources and systems that make a difference.
 
-Our [competency framework](/competencies) provides a structured route to help identify where you may need to develop. And our associated [Challenges](/challenges) provide ideas to help you achieve that.
+Our open source [competency framework]({{ site.baseurl }}/competencies) has been created by and for the industry. It sets the standard for professionals working in a broad range of roles across the elearning industry.
 
-We also provide [coaching and individual support](/coaching).
+Our free [self-assessment]({{ site.baseurl }}/assessment) tools and challenging [coaching programme](/coaching) are designed to help you develop further.
+
+Our [certifications]({{ site.baseurl }}/certification) provide the evidence you need to show that you have broad and deep skills in elearning.

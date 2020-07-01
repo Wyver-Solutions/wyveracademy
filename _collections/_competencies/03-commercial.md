@@ -5,30 +5,30 @@ ID: Commercial
 description: You will probably need to contribute to sales or funding proposals, manage procurement of new technology and work with suppliers. 
 items:
 - ID: C.01
-  name: HTML
-  L1: Able to create a simple HTML page with semantic markup
-  L2: Able to inspect HTML and validate that it is well formed
-  L3: Able to create a multi-page website using dynamic scripting or a static site generator
+  name: Understanding requirements
+  L1: Contribute
+  L2: 
+  L3: Lead
 - ID: C.02
-  name: 
-  L1: 
+  name: Costing
+  L1: Review
   L2: 
-  L3: 
+  L3: Produce
 - ID: C.03
-  name: 
-  L1: 
+  name: Proposals
+  L1: Review
   L2: 
-  L3: 
+  L3: Produce
 - ID: C.04
-  name: 
-  L1: 
-  L2: 
-  L3: 
+  name: Procurement
+  L1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin lectus velit, et volutpat erat venenatis ut. Sed a erat lacus. Donec venenatis egestas egestas.
+  L2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin lectus velit, et volutpat erat venenatis ut. Sed a erat lacus. Donec venenatis egestas egestas.
+  L3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin lectus velit, et volutpat erat venenatis ut. Sed a erat lacus. Donec venenatis egestas egestas. 
 - ID: C.05
-  name: 
-  L1: 
-  L2: 
-  L3: 
+  name: Supplier management
+  L1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin lectus velit, et volutpat erat venenatis ut. Sed a erat lacus. Donec venenatis egestas egestas.
+  L2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin lectus velit, et volutpat erat venenatis ut. Sed a erat lacus. Donec venenatis egestas egestas.
+  L3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin lectus velit, et volutpat erat venenatis ut. Sed a erat lacus. Donec venenatis egestas egestas.
 
 ---
 

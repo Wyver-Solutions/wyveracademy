@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <a class="navbar-brand" href="{{ site.baseurl }}">
+    <a class="navbar-brand" href="{{ site.baseurl }}/">
 
 <img src="{{ 'assets/images/wyver_square_logo.jpg' | relative_url }}" width=30 height=30 alt="Wyver Solutions logo" /> 
       {{ site.title }}</a>
@@ -9,39 +9,45 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="{{ site.baseurl }}">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="{{ site.baseurl }}/">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
         <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="{{ site.baseurl }}/assessment">Assessment</a>
-      </li>
-      
       <li class="nav-item dropdown active">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Competencies
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+          <a class="dropdown-item" href="{{ site.baseurl }}/competencies">View all competency areas</a>
+          <div class="dropdown-divider"></div>
           {% assign competencies = site.competencies | sort: "category" %}
           {% for c in competencies %}
           <a class="dropdown-item" href="{{ site.baseurl }}{{ c.url}}">{{ c.title }}</a>
           {% endfor %}          
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="{{ site.baseurl }}/competencies">View all competency areas</a>
+          
         </div>
+      </li>
+      
+      <li class="nav-item active">
+        <a class="nav-link" href="{{ site.baseurl }}/assessment">Self-assessment</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{{ site.baseurl }}/coaching">Coaching</a>
       </li>
       <li class="nav-item active">
         <a class="nav-link" href="{{ site.baseurl }}/certification">Certification</a>
       </li>
-      <li class="nav-item active">
+      
+      
+      
+      <!--<li class="nav-item active">
         <a class="nav-link" href="{{ site.baseurl }}/challenges">Challenges</a>
-      </li>
+      </li>-->
 
       
-      <li class="nav-item active">
-        <a class="nav-link" href="{{ site.baseurl }}/coaching">Coaching</a>
-      </li>
+      
       
       <!--<li class="nav-item">
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>

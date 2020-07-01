@@ -3,7 +3,7 @@ layout: default
 title: Certification
 permalink: certification
 ---
-Our certificates are designed to allow you demonstrate well-rounded capabilities in digital learning.
+Our certificates are designed to allow you demonstrate well-rounded capabilities in digital learning - based on our <a href="{{ site.baseurl }}/competencies">competency framework</a>.
 
 We offer certificates at:
 
@@ -19,7 +19,7 @@ When you are ready to go for your {{ site.levels.level1.name }} certificate, sig
 
 You will be allowed up to three attempts, and must obtain 80% in order to pass and collect your certificate.
 
-Each attempt uses a random selection of questions from each category of the competency framework.
+Each attempt uses a random selection of questions from each category of the <a href="{{ site.baseurl }}/competencies">competency framework</a>.
 
 **Cost: £149**
 
@@ -32,7 +32,7 @@ The {{ site.levels.level2.name }} certificate is based on successfully completin
 
 ### {{ site.levels.level3.ID }} - {{ site.levels.level3.name }}
 
-The {{ site.levels.level3.name }} certificate is awarded following successful presentation of a portfolio of evidence. This will be assessed by our team of assessors - all experienced professionals.
+The {{ site.levels.level3.name }} certificate is awarded following successful presentation of a portfolio of evidence addressing the <a href="{{ site.baseurl }}/competencies">competency framework</a>. This will be assessed by our team of assessors - all experienced professionals.
 
 [Submission guidelines](#)
 
