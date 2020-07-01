@@ -6,9 +6,9 @@ layout: default
 <table id="competencies" width="100%" class="table table-bordered">
   <thead class="thead-dark">
     <th class="all">Sub-category</th>
-    <th class="min-tablet-l" width="30%">Level 1: Low responsibility</th>
-    <th class="min-tablet-l" width="30%">Level 2: Medium responsibility</th>
-    <th class="min-tablet-l" width="30%">Level 3: High responsibility</th>
+    <th class="min-tablet-l" width="30%">{{ site.levels.level1.ID }} - {{ site.levels.level1.name }}</th>
+    <th class="min-tablet-l" width="30%">{{ site.levels.level2.ID }} - {{ site.levels.level2.name }}</th>
+    <th class="min-tablet-l" width="30%">{{ site.levels.level3.ID }} - {{ site.levels.level3.name }}</th>
   </thead>
   <tbody>
 {% assign challenges = site.challenges %}

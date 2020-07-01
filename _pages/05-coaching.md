@@ -5,6 +5,7 @@ permalink: coaching
 ---
 Through our coaching programme, you will be given a series of [challenges](/challenges) matched to your particular needs. As you do the challenges, we will support you through a series of individual meetings, email-based assistance, and an online community of practice.
 
+The coaching is designed to help you meet the standards of our certifications.
 
 <div class="row">
     <div class="col-lg-6">
@@ -61,13 +62,13 @@ Through our coaching programme, you will be given a series of [challenges](/chal
     <p>For more information, please contact us at: <a href="mailto:sales@wyversolutions.co.uk">sales@wyversolutions.co.uk</a></p>
     <h3>Terms &amp; conditions</h3>
     <ul>
-        <li>All charges are exclusive of VAT.</li>
-        <li>Payments will be requested by invoice.</li>
-        <li>Service delivery will start when the invoice has been paid.</li>
-        <li>All sessions will be run virtually, unless otherwise requested.</li>
-        <li>Travel and accommodation costs will be recharged at cost.</li>
-        <li>Coaching sessions can be rescheduled by mutual consent.</li>
-        <li>No refunds will be provided for missed coaching sessions.</li>
+        <li>All charges are exclusive of VAT</li>
+        <li>Payments will be requested by invoice</li>
+        <li>Service delivery will start when the invoice has been paid</li>
+        <li>All sessions will be run virtually, unless otherwise requested</li>
+        <li>Travel and accommodation costs will be recharged at cost</li>
+        <li>Coaching sessions can be rescheduled by mutual consent</li>
+        <li>No refunds will be provided for missed coaching sessions</li>
     </ul>
 
 

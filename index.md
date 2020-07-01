@@ -1,7 +1,7 @@
 ---
 title: Home
 layout: default
-permalink: /
+permalink: 
 ---
 <p class="text-center">Support and coaching for your learning technology career</p>
 
