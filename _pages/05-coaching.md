@@ -5,7 +5,7 @@ permalink: coaching
 ---
 <div class="row">
     <div class="col-lg-8">
-        <p>Through our coaching programme, you will be given a series of challenges matched to your particular needs. As you do the challenges, we will support you through a series of individual meetings, email-based assistance, and an online community of practice.</p>
+        <p>Through our coaching programme, you will be given a series of <a href="{{ site.baseurl }}/challenges">challenges</a> matched to your particular needs. As you do the challenges, we will support you through a series of individual meetings, email-based assistance, and an online community of practice.</p>
 
         <p>The coaching is designed to help you meet the standards of our <a href="{{ site.baseurl }}/certification">certifications</a>.</p>
 
