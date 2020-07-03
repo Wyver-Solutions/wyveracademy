@@ -1,0 +1,6 @@
+# To do
+
+- Think about the name
+- Move competencies to own repo and incorporate as a sub-module
+- Improve the UX of the self-assessment
+- Make the canvas spidergram appear in a lightbox
