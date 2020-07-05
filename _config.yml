@@ -35,6 +35,18 @@ collections:
     challenges:
         output: true
 
+defaults:
+  - scope:
+      path: ""
+      type: "elearning-competencies"
+    values:
+      layout: "competency"
+  - scope:
+      path: ""
+      type: "challenges"
+    values:
+      layout: "challenge"
+
 collections_dir: _collections
 
 include: ['_pages']
