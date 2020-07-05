@@ -66,8 +66,9 @@ $(document).ready(function() {
   hiddenSteps: [] // Hidden steps
       });
 
-    $("form#assessment").submit(function(){
-        event.preventDefault();
+$("form#assessment input[type=radio]").click(function(){
+    //$("form#assessment").submit(function(){
+        //event.preventDefault();
         console.log('Y');
         formData = $('form#assessment').serializeArray(); // put form data into array
 //console.log(formData);
@@ -138,10 +139,12 @@ $(document).ready(function() {
         
         
 
-        }); // end of Submit function
+        }); // end of on click radio button function
 } ); // end of Document.ready function
 
-
+//
+// Radar chart
+//
 function radar(labels,scores) {
     var ctx = document.getElementById('radarChart').getContext('2d');
     Chart.defaults.global.defaultFontSize = 14;
