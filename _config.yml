@@ -30,7 +30,7 @@ plugins:
   - jekyll-feed
 
 collections:
-    competencies:
+    elearning-competencies:
         output: true
     challenges:
         output: true

@@ -3,7 +3,7 @@ layout: default
 title: Self-assessment
 permalink: assessment
 ---
-{% assign competencies = site.competencies | sort: "category" %}
+{% assign competencies = site.elearning-competencies | sort: "category" %}
 <script>var competencyGroups = [];</script>
 
 <div id="smartwizard">
