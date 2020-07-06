@@ -5,7 +5,7 @@ permalink: competencies
 ---
 The Wyver Academy competency framework is designed to produce well-rounded digital specialists.
 
-[Printable version - all competencies](print)
+[Printable version - all competencies]({{ site.baseurl }}/competencies/print)
 
 {% include competencies-list.html %}
 
