@@ -9,6 +9,7 @@ permalink: assessment
 
 <div class="row mt-5">
       <div class="col-12">
+      <p>This data is not stored on our systems.</p>
 
 <div class="assessmentSlider" id="assessmentSlider">
     <!-- Setup tabs
@@ -31,20 +32,23 @@ permalink: assessment
         <div class="row">
         <script>competencyGroups.push(["{{ c.title }}","{{ c.ID }}_{{ item.ID }}",0]);</script>
           <div class="col-md-3">
-            <h3>{{ c.title }}</h3>
+            <h4>{{ c.title }}</h4>
             <p><strong>{{ item.name }}</strong></p>
             <label for="{{ item.ID }}">Unset</label>
             <input type="radio" id="{{ c.ID }}_{{ item.ID }}_0" name="{{ c.ID }}_{{ item.ID }}" value="0" checked="checked">
           </div>
           <div class="col-md-3">
+            <h4>Level 1</h4>
             <input type="radio" id="{{ c.ID }}_{{ item.ID }}_1" name="{{ c.ID }}_{{ item.ID }}" value="1">
             <p>{{ item.L1 }}</p>
           </div>
           <div class="col-md-3">
+            <h4>Level 2</h4>
             <input type="radio" id="{{ c.ID }}_{{ item.ID }}_2" name="{{ c.ID }}_{{ item.ID }}" value="2">
             <p>{{ item.L2 }}</p>
           </div>
           <div class="col-md-3">
+            <h4>Level 3</h4>
             <input type="radio" id="{{ c.ID }}_{{ item.ID }}_3" name="{{ c.ID }}_{{ item.ID }}" value="3">
             <p>{{ item.L3 }}</p>
           </div>
