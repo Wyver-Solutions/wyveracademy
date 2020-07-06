@@ -28,6 +28,11 @@ $("button#previous").on('click', function() {
   return false;
 });
 
+$("button#next").on('click', function() {
+  slider.goToNextSlide();
+  return false;
+});
+
 $("button#start").on('click', function() {
   slider.goToSlide(0);
   return false;

@@ -32,7 +32,7 @@ permalink: assessment
         <script>competencyGroups.push(["{{ c.title }}","{{ c.ID }}_{{ item.ID }}",0]);</script>
           <div class="col-md-3">
             <h3>{{ c.title }}</h3>
-            <p>{{ item.name }}</p>
+            <p><strong>{{ item.name }}</strong></p>
             <label for="{{ item.ID }}">Unset</label>
             <input type="radio" id="{{ c.ID }}_{{ item.ID }}_0" name="{{ c.ID }}_{{ item.ID }}" value="0" checked="checked">
           </div>
@@ -60,6 +60,7 @@ permalink: assessment
 <div class="text-center">
 <button id="start" type="submit" class="btn btn-secondary">Return to start</button>
 <button id="previous" type="submit" class="btn btn-secondary">Previous</button>
+<button id="next" type="submit" class="btn btn-secondary">Next</button>
 <button id="showSummary" type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
   Show summary chart
 </button>
