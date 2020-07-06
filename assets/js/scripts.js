@@ -2,6 +2,38 @@ var imageURL = '';
 
 
 $(document).ready(function() {
+  var slider = $('.assessmentSlider').bxSlider({
+    touchEnabled: false,
+    pager: true,
+    pagerType: 'short',
+    controls: false,
+    mode: 'vertical',
+    adaptiveHeight: true
+  });
+
+
+$("input[type='radio']").on('change', function() {
+  //$('input[type=radio]').click(function () {
+
+        //var rID = $(this).prop("id");
+
+        //$(this).prop('checked', true);
+        //console.log(rID, $(this).prop('checked'));
+        slider.goToNextSlide();
+        return false;
+    });
+
+$("button#previous").on('click', function() {
+  slider.goToPrevSlide();
+  return false;
+});
+
+$("button#start").on('click', function() {
+  slider.goToSlide(0);
+  return false;
+});
+
+
   $('#competencies').DataTable({
     "paging": false,
     "ordering": false,
@@ -52,11 +84,15 @@ $(document).ready(function() {
     hiddenSteps: [] // Hidden steps
   });
 
-  //$("form#assessment input[type=radio]").click(function() {
-    $("form#assessment").submit(function(){
-    event.preventDefault();
-    console.log('Y');
-    formData = $('form#assessment').serializeArray(); // put form data into array
+  //
+  // Show Chart
+  //
+
+    $('button#showSummary').click(function(){
+    //$("div#assessmentSlider").submit(function(){
+    //event.preventDefault();
+    //console.log('Y');
+    formData = $('div#assessmentSlider :input').serializeArray(); // put form data into array
     //console.log(formData);
 
     var compGroups = []; // Setup array to hold competence names and total scores

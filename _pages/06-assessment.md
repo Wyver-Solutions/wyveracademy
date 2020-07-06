@@ -10,8 +10,8 @@ permalink: assessment
 <div class="row mt-5">
       <div class="col-12">
 
-<div id="smartwizard">
-    <!-- Setup tabs -->
+<div class="assessmentSlider" id="assessmentSlider">
+    <!-- Setup tabs
     <ul class="nav" id="Tabs" role="tablist">
 
     {% for c in competencies %}
@@ -20,84 +20,56 @@ permalink: assessment
       </li>
     {% endfor %}
 </ul>
+-->
 
 
-<form id="assessment">
-
-
-    <div class="tab-content">
 
     {% for c in competencies %}
+      {% for item in c.items %}
 
-        <div class="tab-pane" id="{{ c.ID }}-pane" role="tabpanel" aria-labelledby="{{ c.ID }}-tab">
-            <h2>{{ c.title }}</h2>
-            <div class="form-group">
 
-                <p>{{ c.description }}</p>
-                <p><a href="https://github.com/Wyver-Solutions/wyveracademy/issues" target="_blank">Comment on Github</a> (opens in a new tab)</p>
-                <table width="100%" class="table table-bordered table-striped">
-                    <thead class="thead-dark">
-                        <th class="all">Sub-category</th>
-                        <th class="min-tablet-l" width="30%">Level 1</th>
-                        <th class="min-tablet-l" width="30%">Level 2</th>
-                        <th class="min-tablet-l" width="30%">Level 3</th>
-                    </thead>
-                    <tbody>
-                        {% for item in c.items %}
-                        <script>competencyGroups.push(["{{ c.title }}","{{ c.ID }}_{{ item.ID }}",0]);</script>
-                        <tr>
-                            <td class="align-top">
-                                <p><strong>{{ item.name }}</strong></p>
-                            </td>
-                            <td class="align-top">
-                                <p>{{ item.L1 }}</p>
-                            </td>
-                            <td class="align-top">
-                                <p>{{ item.L2 }}</p>
-                            </td>
-                            <td class="align-top">
-                                <p>{{ item.L3 }}</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="align-top text-center">
-                                <label for="{{ item.ID }}">Unset</label>
-                                <input type="radio" id="{{ c.ID }}_{{ item.ID }}_0" name="{{ c.ID }}_{{ item.ID }}" value="0" checked="checked">
-                            </td>
-                            <td class="align-top text-center">
-                                <input type="radio" id="{{ c.ID }}_{{ item.ID }}_1" name="{{ c.ID }}_{{ item.ID }}" value="1">
-                            </td>
-                            <td class="align-top text-center">
-                                <input type="radio" id="{{ c.ID }}_{{ item.ID }}_2" name="{{ c.ID }}_{{ item.ID }}" value="2">
-                            </td>
-                            <td class="align-top text-center">
-                                <input type="radio" id="{{ c.ID }}_{{ item.ID }}_3" name="{{ c.ID }}_{{ item.ID }}" value="3">
-                            </td>
-                        </tr>
-                        {% endfor %}
-                    </tbody>
-                </table>
-            </div><!-- end of form group: {{ c.title }}-->
-        </div><!-- end of tab pane -->
+        <div class="row">
+        <script>competencyGroups.push(["{{ c.title }}","{{ c.ID }}_{{ item.ID }}",0]);</script>
+          <div class="col-md-3">
+            <h3>{{ c.title }}</h3>
+            <p>{{ item.name }}</p>
+            <label for="{{ item.ID }}">Unset</label>
+            <input type="radio" id="{{ c.ID }}_{{ item.ID }}_0" name="{{ c.ID }}_{{ item.ID }}" value="0" checked="checked">
+          </div>
+          <div class="col-md-3">
+            <input type="radio" id="{{ c.ID }}_{{ item.ID }}_1" name="{{ c.ID }}_{{ item.ID }}" value="1">
+            <p>{{ item.L1 }}</p>
+          </div>
+          <div class="col-md-3">
+            <input type="radio" id="{{ c.ID }}_{{ item.ID }}_2" name="{{ c.ID }}_{{ item.ID }}" value="2">
+            <p>{{ item.L2 }}</p>
+          </div>
+          <div class="col-md-3">
+            <input type="radio" id="{{ c.ID }}_{{ item.ID }}_3" name="{{ c.ID }}_{{ item.ID }}" value="3">
+            <p>{{ item.L3 }}</p>
+          </div>
+        </div>
 
         {% endfor %}
-    </div> <!--- end of tab content -->
+    {% endfor %}
 
 
 <!--<div class="text-center"><button type="submit" class="btn btn-primary">Produce assessment graph</button></div>-->
-
+</div> <!-- end of slider -->
 <!-- Button trigger modal -->
 <div class="text-center">
-<button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+<button id="start" type="submit" class="btn btn-secondary">Return to start</button>
+<button id="previous" type="submit" class="btn btn-secondary">Previous</button>
+<button id="showSummary" type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
   Show summary chart
 </button>
 </div>
 
 
-</form>
 
 
-</div> <!-- end of smartwizard -->
+
+
 
 </div> <!-- End of column -->
 
