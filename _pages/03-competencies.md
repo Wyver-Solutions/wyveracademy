@@ -1,7 +1,7 @@
 ---
 title: Competency framework
 layout: default
-permalink: elearning-competencies
+permalink: elearning-competencies/
 ---
 The Wyver Academy competency framework is designed to produce well-rounded digital specialists.
 
