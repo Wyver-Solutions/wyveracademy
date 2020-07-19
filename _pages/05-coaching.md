@@ -5,12 +5,12 @@ permalink: coaching
 ---
 <div class="row">
     <div class="col-lg-8">
-        <p>Through our coaching programme, you will be given a series of <a href="{{ site.baseurl }}/challenges">challenges</a> matched to your particular needs. As you do the challenges, we will support you through a series of individual meetings, email-based assistance, and an online community of practice.</p>
+        <p>Through our coaching programme, you will be given a structured series of challenges matched to your <a href="{{ site.baseurl }}/assessment">particular needs</a>. As you do the challenges, we will support you through a series of individual meetings, email-based assistance, and an online community of practice.</p>
 
         <p>The coaching is designed to help you meet the standards of our <a href="{{ site.baseurl }}/certification">certifications</a>.</p>
 
       <h2>Discovery</h2>
-      <p>The first 30 minute discovery conversation with a coach is <strong>free</strong>. During this session we will assess your particular needs and identify whether we are the best people for you.</p>
+      <p>The first 30 minute discovery conversation with a coach is <strong>free</strong>. During this session we will assess your particular needs and identify whether we are the best people to support you.</p>
       <h2>10 week programme</h2>
       <p>Should you wish to proceed, we will provide you with a personalised 10 week programme of challenges. This can adapt as we proceed. During this period we will schedule up to five hour-long review meetings between you and your coach.</p>
       <!--<h2>Annual membership</h2>
@@ -63,12 +63,12 @@ permalink: coaching
     <h3>Terms &amp; conditions</h3>
     <ul>
         <li>All charges are exclusive of VAT</li>
-        <li>Payments will be requested by invoice</li>
-        <li>Service delivery will start when the invoice has been paid</li>
+        <li>Payments will be requested by invoice in two stages: 50% in advance and 50% at the end of the 10 weeks</li>
+        <li>Service delivery will start when the first invoice has been paid</li>
         <li>All sessions will be run virtually, unless otherwise requested</li>
         <li>Travel and accommodation costs will be recharged at cost</li>
-        <li>Coaching sessions can be rescheduled by mutual consent</li>
-        <li>No refunds will be provided for missed coaching sessions</li>
+        <li>Coaching sessions can be rescheduled by mutual consent - given 24 hours notice</li>
+        <li>No refunds will be provided where a client misses a coaching session</li>
     </ul>
 
 
@@ -77,12 +77,3 @@ permalink: coaching
 </div>
 
 </div>
-
-
-
-
-
-
-
- 
-
