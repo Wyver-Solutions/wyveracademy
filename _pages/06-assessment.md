@@ -3,7 +3,6 @@ layout: default
 title: Self-assessment
 permalink: assessment
 ---
-
 {% assign competencies = site.elearning-competencies | sort: "category" %}
 <script>var competencyGroups = [];</script>
 
@@ -108,6 +107,3 @@ permalink: assessment
 
 
 </div><!-- end of row-->
-<div class="text-center">
-    <p>We can <a href="{{ site.baseurl }}/coaching">coach</a> you to the next level, or to improve where you have gaps.</p>
-</div>
