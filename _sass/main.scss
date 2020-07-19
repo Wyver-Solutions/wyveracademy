@@ -6,6 +6,16 @@ body {
     background-color: $white;
 }
 
+a[href^="http"]:not([href*="wyversolutions.co.uk"]):after {
+  content: "\f08e";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 4px;
+}
+
 .badge {
   position: fixed;
   left: -7px;
@@ -53,7 +63,7 @@ body {
 }
 
 canvas#radarChart {
-          
+
 }
 
 .footer {

@@ -18,14 +18,14 @@ organisation: Wyver Solutions Ltd
 orgurl: https://www.wyversolutions.co.uk
 email: mberthelemy@wyversolutions.co.uk
 description: Learn to become a learning technology consultant
-baseurl: "/wyveracademy" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 #url: "https://wyversolutions.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: 
-github_username:  
+twitter_username:
+github_username:
 
 # Build settings
 markdown: kramdown
-theme: 
+theme:
 plugins:
   - jekyll-feed
 
@@ -64,12 +64,12 @@ include: ['_pages']
 #   - vendor/ruby/
 
 levels:
-    level1: 
+    level1:
         ID: Level 1
         name: Digital Learning Foundation
-    level2: 
+    level2:
         ID: Level 2
         name: Digital Learning Practitioner
-    level3: 
+    level3:
         ID: Level 3
         name: Digital Learning Advanced
