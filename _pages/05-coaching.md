@@ -16,7 +16,9 @@ permalink: coaching
       <!--<h2>Annual membership</h2>
       <p>Our annual membership fee gives you access to our community of practice and unlimited email-based assistance, as well as custom content that is created just for members.</p>
       <p>These fees also enable us to continue providing open access to our growing bank of challenges, and to maintain the competency framework.</p>-->
+      <p><a type="button" class="btn btn-primary" href="{{ site.baseurl }}/contact">Contact us for more information</a></p>
     </div>
+
         <div class="col-lg-4">
             <figure class="figure">
                 <img class="img-fluid" src="{{ '/assets/images/framework.png' | relative_url }}" alt="circle with framework components" />
