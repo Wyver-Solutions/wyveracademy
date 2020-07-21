@@ -51,4 +51,4 @@ They will be looking for:
 
 You will either receive a **pass** or a **referral**.
 
-A referral will come with some feedback, and the opportunity to resubmit once more.
+A referral will come with some feedback, and the opportunity to resubmit once more. There will be a resubmission fee.
