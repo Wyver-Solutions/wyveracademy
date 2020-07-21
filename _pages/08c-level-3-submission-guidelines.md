@@ -11,6 +11,8 @@ Your complete portfolio should contain:
 2. Your evidence (see below).
 3. A short statement for each piece of evidence, where you reflect on how it demonstrates competence, and what you would do differently next time
 
+Often you will have produced materials as part of your work in a team. In your statement, please describe your personal contribution.
+
 ## The evidence portfolio
 
 You can choose how to present your evidence. Some ideas are given below:
@@ -18,6 +20,19 @@ You can choose how to present your evidence. Some ideas are given below:
 - As a link to a blog or video log
 - As a link to a shared folder of files
 - As a link to a PDF document with screenshots etc
+
+Evidence might include things like:
+
+- Diagrams
+- Documents
+- Project plans
+- Videos
+- Audio files
+- Finished products
+
+## Plagiarism
+
+When submitting your evidence, you will be asked to declare that it is your own work. Where you use other people's work inside the evidence, it must be properly identified and referenced.
 
 ## Non-disclosure
 
