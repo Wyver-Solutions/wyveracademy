@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Submission guidelines
-permalink: certification/submission-guidelines
+title: Advanced certificate submission guidelines
+permalink: certification/level-3-submission-guidelines
 ---
 The {{ site.levels.level3.ID }} {{ site.levels.level3.name }} certificate is based on a gathered portfolio of evidence.
 
