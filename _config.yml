@@ -27,8 +27,8 @@ github_username:
 # Build settings
 markdown: kramdown
 theme:
-plugins:
-  - jekyll-feed
+#plugins:
+#  - jekyll-feed
 
 collections:
     elearning-competencies:
