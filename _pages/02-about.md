@@ -9,7 +9,7 @@ Our founder, Mark Berthelemy, has spent over 30 years involved at the intersecti
 
 We want to support the next generation of elearning specialists to create learning experiences, resources and systems that make a difference.
 
-Our open source [competency framework](https://elearningcompetencies.info) has been created by and for the industry. It sets the standard for professionals working in a broad range of roles across the elearning industry.
+Our open source [competency framework](https://digitallearningcompetencies.info) has been created by and for the industry. It sets the standard for professionals working in a broad range of roles across the elearning industry.
 
 Our free [self-assessment]({{ site.baseurl }}/assessment) tools and challenging [coaching programme](/coaching) are designed to help you develop further.
 
